@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+.d-flex{
+    display: flex;
+}
+
+/* main */
+main{
+    height: calc(100vh - 80px);
+}
+
+aside{
+    width: 15%;
+}
+
+.main-content{
+    width: 85%;
+}
+
+/* footer */
+footer{
+    height: 80px;
+}
