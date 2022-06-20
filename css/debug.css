@@ -1,16 +1,20 @@
-/* main */
-.debug main{
-    border: 3px solid lightgreen;
-}
-
-.debug aside{
-    border: 3px solid violet;
-}
-
-.debug .main-content{
-    border: 3px solid violet;
-}
-
+.debug main, 
 .debug footer{
     border: 3px solid lightgreen;
+}
+
+.debug aside, 
+.debug .main-content,
+footer .first,
+footer .second,
+footer .third{
+    border: 3px solid violet;
+}
+
+.debug aside .sidenav-top, 
+.debug aside .sidenav-bottom, 
+.main-content .first,
+.main-content .second,
+.main-content .third{
+    border: 3px solid yellow;
 }

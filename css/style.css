@@ -1,16 +1,3 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* utilities */
-.d-flex{
-    display: flex;
-}
-
 /* main */
 main{
     height: calc(100vh - 80px);
@@ -20,11 +7,43 @@ aside{
     width: 15%;
 }
 
+aside .sidenav-top{
+    height: 80%;
+}
+
+aside .sidenav-bottom{
+    height: 20%;
+}
+
 .main-content{
     width: 85%;
+}
+
+.main-content .first{
+    height: 10%;
+}
+
+.main-content .second{
+    height: 5%;
+}
+
+.main-content .third{
+    height: 85%;
 }
 
 /* footer */
 footer{
     height: 80px;
+}
+
+footer .first{
+    width: 25%;
+}
+
+footer .second{
+    width: 50%;
+}
+
+footer .third{
+    width: 25%;
 }
