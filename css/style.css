@@ -1,3 +1,16 @@
+/* globals */
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, a, i{
+    color: #fff;
+}
+
 /* main */
 main{
     height: calc(100vh - 80px);
@@ -5,6 +18,7 @@ main{
 
 aside{
     width: 15%;
+    background-color: var(--black);
 }
 
 aside .sidenav-top{
@@ -21,19 +35,23 @@ aside .sidenav-bottom{
 
 .main-content .first{
     height: 10%;
+    background-color: var(--primary-dark);
 }
 
 .main-content .second{
     height: 5%;
+    background-color: var(--primary);
 }
 
 .main-content .third{
     height: 85%;
+    background-color: var(--primary);
 }
 
 /* footer */
 footer{
     height: 80px;
+    background-color: var(--secondary);
 }
 
 footer .first{

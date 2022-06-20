@@ -1,9 +1,23 @@
+/* css reset */
 *,
 *::after,
 *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* palette */
+:root{
+    --primary: #141922;
+    --primary-dark: #080B12;
+    --secondary: #282828;
+    --tertiary: #ADFF2F;
+
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --text-gray: #7C7E83;
 }
 
 /* utilities */
