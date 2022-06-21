@@ -15,24 +15,19 @@ p, h1, h2, h3, h4, a, li, i{
     color: #fff;
 }
 
-img{
-    height: 100%;
-    width: 100%;
-}
-
-/* gobal-container */
+/**** gobal-container ****/
 .global-container{
     position: relative;
 }
 
-/* sidebar */
 main{
-    min-height: calc(100vh - 80px);
-    overflow: hidden;
+    height: calc(100vh - 80px);
 }
 
+
+/**** sidebar ****/
 aside{
-    width: 15%;
+    width: 20%;
     background-color: var(--black);
 }
 
@@ -99,25 +94,29 @@ aside .sidenav-bottom{
     color: #fff;
 }
 
-/* main content */
-.main-content{
-    width: 85%;
+.playlist .playlist-top{
+    height: 20%;
 }
 
+.playlist .playlist-bottom{
+    height: 80%;
+}
+
+/**** main content ****/
 .main-content .first{
-    height: 10%;
+    min-height: 80px;
     background-color: var(--primary-dark);
 }
 
 .main-content .second{
-    height: 8%;
+    min-height: 80px;
     background-color: var(--primary);
 }
 
 .main-content .third{
-    height: 82%;
     background-color: var(--primary);
-    overflow: scroll;
+    overflow-y: scroll;
+    padding: 40px 0px;
 }
 
 .main-content .navbar .nav-item a{
@@ -136,8 +135,8 @@ aside .sidenav-bottom{
     background-color: var(--tertiary);
 }
 
-.main-content .third .cards .card{
-    width: calc(100% / 6);
+.main-content .third  .cards .card{
+    max-width: calc((100% / 6) - 20px);
 }
 
 .main-content .third .cards .card p{
@@ -148,6 +147,11 @@ aside .sidenav-bottom{
 .main-content .third .card .card-image{
     position: relative;
     cursor: pointer;
+}
+
+.main-content .third .card .card-image img{
+    width: 100%;
+    height: 100%;
 }
 
 .main-content .third .card .card-image .ri-play-circle-line{
@@ -169,14 +173,17 @@ aside .sidenav-bottom{
     display: block;
 }
 
-
+.main-content .third .subtitle{
+    font-weight: 600;
+    color: var(--text-gray);
+}
 
 /* footer */
 footer{
     height: 80px;
     width: 100%;
     background-color: var(--secondary);
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
