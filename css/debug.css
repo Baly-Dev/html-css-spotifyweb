@@ -5,16 +5,16 @@
 
 .debug aside, 
 .debug .main-content,
-footer .first,
-footer .second,
-footer .third{
+.debug footer .first,
+.debug footer .second,
+.debug footer .third{
     border: 3px solid violet;
 }
 
 .debug aside .sidenav-top, 
 .debug aside .sidenav-bottom, 
-.main-content .first,
-.main-content .second,
-.main-content .third{
+.debug .main-content .first,
+.debug .main-content .second,
+.debug .main-content .third{
     border: 3px solid yellow;
 }

@@ -20,7 +20,8 @@
     --text-gray: #7C7E83;
 }
 
-/* utilities */
+/**** utilities ****/
+/* positioning */
 .d-flex{
     display: flex;
 }
@@ -33,10 +34,35 @@
     justify-content: space-between;
 }
 
+.jc-end{
+    justify-content: flex-end;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
 .al-center{
     align-items: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+/* width */
 .w-10{
     width: 10%;
 }
@@ -77,7 +103,89 @@
     width: 100%;
 }
 
-img{
-    height: 100%;
-    width: 100%;
+/* margin */
+.mb-5{
+    margin-bottom: 5px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mt-20{
+    margin-bottom: 20px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.my-20{
+    margin: 20px 0px;
+}
+
+/* padding */
+.px-10{
+    padding: 0px 10px;
+}
+
+.px-20{
+    padding: 0px 20px;
+}
+
+.px-30{
+    padding: 0px 30px;
+}
+
+.py-20{
+    padding: 20px 0px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+/* button */
+.btn{
+    cursor: pointer;
+}
+
+.btn-white{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.btn-classic{
+    background-color: transparent;
+    border: 0px;
+    color: var(--text-gray);
+    font-weight: 600;
 }

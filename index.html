@@ -19,72 +19,232 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Spotifyweb Clone</title>
 </head>
-<body class="debug">
+<body class="">
 
     <div class="gobal-container">
         <main class="d-flex">
             <!-- sidebar -->
             <aside class="sidenav">
-
                 <section class="sidenav-top">
-                    <div>
-                        <img src="media/logo.svg" alt="Logo">
+                    <div class="mb-20 px-20">
+                        <img class="logo" src="media/logo.svg" alt="Logo">
                     </div>
-                    <div>
+                    <nav class="menu mb-25">
+                        <ul>
+                            <li class="menu-item d-flex al-center mb-10 px-20 active">
+                                <i class="ri-home-4-fill mr-10"></i>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item d-flex al-center mb-10 px-20">
+                                <i class="ri-search-2-line  mr-10"></i>
+                                <a href="#">Cerca</a>
+                            </li>
+                            <li class="menu-item d-flex al-center px-20">
+                                <i class="ri-bar-chart-fill  mr-10"></i>
+                                <a href="#">La tua libreria</a>
+                            </li>
+                        </ul>
+                    </nav>
 
+                    <div class="playlist">
+                        <h3 class="px-20 mb-10">Playlist</h3>
+                        <div class="d-flex px-20 mb-10">
+                            <i class="ri-add-box-fill mr-10"></i>
+                            <button class="btn btn-classic">Crea Playlist</button>
+                        </div>
+                        <ul>
+                            <li class="playlist-item mb-10 px-20">Nome Playlist</li>
+                            <li class="playlist-item mb-10 px-20">Nome Playlist</li>
+                            <li class="playlist-item mb-10 px-20">Nome Playlist</li>
+                            <li class="playlist-item mb-10 px-20">Nome Playlist</li>
+                            <li class="playlist-item mb-10 px-20">Nome Playlist</li>
+                            <li class="playlist-item mb-10 px-20">Nome Playlist</li>
+                            <li class="playlist-item px-20">Nome Playlist</li>
+                        </ul>
                     </div>
+
                 </section>
 
-                <section class="sidenav-bottom">
+                <section class="sidenav-bottom p-20 d-flex flex-col jc-end ">
+                    <button class="btn btn-classic d-flex al-center mt-auto">
+                        <i class="ri-arrow-down-circle-line mr-10"></i>
+                        Install app
+                    </button>
+                    <hr class="my-20">
                     <div>
-
-                    </div>
-
-                    <div>
-                        
+                        <button class="btn btn-classic user d-flex al-center">
+                            <i class="ri-user-line mr-10"></i>
+                            <p>John Doe</p>
+                        </button>
                     </div>
                 </section>
-
             </aside>
+            <!-- end sidebar -->
 
+            <!-- content -->
             <div class="main-content d-flex flex-col">
-                <section class="first">
-
+                <section class="first d-flex al-center px-20 jc-end">
+                    <button class="btn btn-white">
+                        Effettua l'upgrade
+                    </button>
                 </section>
-                <section class="second">
-
+                <section class="second d-flex al-center jc-center">
+                    <nav class="navbar">
+                        <ul class="d-flex al-center">
+                            <li class="nav-item d-flex al-center flex-col px-10">
+                                <a class="mb-5" href="#">In evidenza</a>
+                                <div class=""></div>
+                            </li>
+                            <li class="nav-item d-flex al-center flex-col active px-10">
+                                <a class="mb-5" href="#">Podcast</a>
+                                <div class=""></div>
+                            </li>
+                            <li class="nav-item d-flex al-center flex-col px-10">
+                                <a class="mb-5" href="#">Classifiche</a>
+                                <div class=""></div>
+                            </li>
+                            <li class="nav-item d-flex al-center flex-col px-10">
+                                <a class="mb-5" href="#">Generi e mood</a>
+                                <div class=""></div>
+                            </li>
+                            <li class="nav-item d-flex al-center flex-col px-10">
+                                <a class="mb-5" href="#">Nuove uscite</a>
+                                <div class=""></div>
+                            </li>
+                            <li class="nav-item d-flex flex-col al-center px-10">
+                                <a class="mb-5" href="#">Scopri</a>
+                                <div class=""></div>
+                            </li>
+                        </ul>
+                    </nav>
                 </section>
+
                 <section class="third">
-                    
+                    <div class="row px-30 mb-50">
+                        <h2 class="mb-30">Recently played</h2>
+                        <div class="cards d-flex gap-30">
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/metal_lifting.jpg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/stranger.jpeg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h3>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/aquietplace.jpeg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">A quiet place</h3>
+                                <p>Subtitle</p>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/split.jpeg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">Split</h3>
+                                <p>Subtitle</p>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/cure.jpeg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">A cure for wellness</h3>
+                                <p>Subtitle</p>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="mb-10 card-image active">
+                                    <img src="media/sinister.jpeg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">Sinister</h3>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row px-30">
+                        <h2 class="mb-30">Recently played</h2>
+                        <div class="cards d-flex gap-30">
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/metal_lifting.jpg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="mb-10 card-image">
+                                    <img src="media/stranger.jpeg" alt="">
+                                    <i class="ri-play-circle-line"></i>
+                                </div>
+                                <h3 class="mb-5">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h3>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+
             </div>
+            <!-- end content -->
         </main>
 
         <footer class="d-flex">
 
-            <div class="first d-flex al-center">
-                <img class="w-20" src="media/sinister.jpeg" alt="Song">
+            <div class="first d-flex al-center p-20">
+                <img class="w-20 mr-20" src="media/sinister.jpeg" alt="Song">
                 <div class="w-50 d-flex flex-col">
                     <h4>Sinister</h4>
                     <p>Brano nome</p>
                 </div>
-                <div class="w-30 d-flex">
-                    <i class="ri-heart-3-line"></i>
+                <div class="w-30 d-flex jc-end">
+                    <i class="ri-heart-3-line mr-10"></i>
                     <i class="ri-folder-line"></i>
                 </div>
             </div>
 
-            <div class="second d-flex flex-col jc-center">
-                <div>
-
+            <div class="second d-flex flex-col al-center jc-center p-20">
+                <div class="d-flex al-center jc-center w-80 mb-10">
+                    <i class="ri-shuffle-line mr-20"></i>
+                    <i class="ri-skip-back-fill mr-20"></i>
+                    <i class="ri-play-circle-line player mr-20"></i>
+                    <i class="ri-skip-forward-fill mr-20"></i>
+                    <i class="ri-arrow-go-forward-fill"></i>
                 </div>
-                <div>
-                    
+                <div class="d-flex al-center jc-between w-80 px-20">
+                    <p class="w-20 time text-left">0:25</p>
+                    <div class="w-60 play-bar d-flex">
+                        <div class="w-20 inner"></div>
+                    </div>
+                    <p class="w-20 time text-right">4:35</p>
                 </div>
             </div>
 
-            <div class="third d-flex al-center">
-                
+            <div class="third d-flex al-center p-20">
+                <i class="ri-menu-fill mr-20"></i>
+                <i class="ri-computer-fill mr-20"></i>
+                <i class="ri-volume-up-fill mr-20"></i>
+                <div class="w-60 play-bar d-flex">
+                    <div class="w-10 inner"></div>
+                </div>
             </div>
 
         </footer>
