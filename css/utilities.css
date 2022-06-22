@@ -195,11 +195,20 @@
     border-radius: 20px;
 }
 
+.btn-white:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
 .btn-classic{
     background-color: transparent;
     border: 0px;
     color: var(--text-gray);
     font-weight: 600;
+}
+
+.btn-classic:hover{
+    color: var(--white);
 }
 
 /* borderd */

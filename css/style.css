@@ -39,16 +39,26 @@ aside .sidenav-bottom{
     height: 20%;
 }
 
-.sidenav-top{
+aside .sidenav-top{
     padding: 20px 0px;
 }
 
 .sidenav-top img.logo{
     max-width: 150px;
+    cursor: pointer;
+}
+
+.sidenav-top img.logo-xs{
+    display: none;
 }
 
 .sidenav-top li{
     cursor: pointer;
+}
+
+.sidenav-top .menu .menu-item:hover a,
+.sidenav-top .menu .menu-item:hover i{
+    color: var(--white);
 }
 
 .sidenav-top .menu-item i{
@@ -70,6 +80,10 @@ aside .sidenav-bottom{
 
 .sidenav-top li.active{
     border-left: 3px solid var(--tertiary);
+}
+
+.sidenav-top .playlist .playlist-item:hover{
+    color: var(--white);
 }
 
 .sidenav-top .playlist h3{
@@ -116,13 +130,17 @@ aside .sidenav-bottom{
 .main-content .third{
     background-color: var(--primary);
     overflow-y: scroll;
-    padding: 40px 0px;
+    padding: 30px 0px;
 }
 
 .main-content .navbar .nav-item a{
     text-transform: uppercase;
     font-weight: 600;
     color: var(--text-gray);
+}
+
+.main-content .navbar .nav-item a:hover{
+    color: var(--white);
 }
 
 .main-content .navbar .nav-item div{
@@ -178,7 +196,7 @@ aside .sidenav-bottom{
     color: var(--text-gray);
 }
 
-/* footer */
+/*** footer ****/
 footer{
     height: 80px;
     width: 100%;
@@ -188,20 +206,30 @@ footer{
 }
 
 footer .first{
-    width: 25%;
+    min-width: 25%;
 }
 
 footer .second{
-    width: 50%;
+    min-width: 50%;
 }
 
 footer .third{
-    width: 25%;
+    min-width: 25%;
 }
 
 footer .first img{
     width: 60px;
     height: 60px;
+}
+
+footer i{
+    cursor: pointer;
+}
+
+footer i:hover,
+footer i.ri-heart-3-line:hover,
+footer i.ri-folder-line:hover{
+    color: #f2f2f2;
 }
 
 footer .first p, footer .first i{
@@ -240,3 +268,134 @@ footer .play-bar .inner{
     border-bottom-left-radius: 20px;
     background-color: #C1C1C1;
 }
+
+/**** responsive ****/
+@media only screen and (max-width: 768px){
+
+    /* sidebar */
+    aside{
+        width: 100%;
+    }
+
+    .sidenav-top .menu-item i{
+        font-size: 1.2em;
+    }
+
+    .sidenav-top .menu-item a, .sidenav-top .playlist li{
+        font-size: 0.9em;
+    }
+
+    /* main content */
+    .main-content .second .navbar{
+        padding:  0px 10px;
+    }
+
+    .main-content .second .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-content .second .navbar ul li{
+        margin-bottom: 10px;
+    }
+
+    .main-content .second .navbar .nav-item a{
+        font-size: 0.6em;
+    }
+
+    .main-content .third .row h2{
+        font-size: 1.2em;
+    }
+
+    .main-content .card h3{
+        font-size: 0.6em;
+    }
+
+    .main-content .card p{
+        font-size: 0.5em;
+    }
+
+    .main-content .row .subtitle{
+        font-size: 0.8em;
+    }
+
+    .main-content .third .cards{
+        flex-wrap: wrap;
+    }
+
+    .main-content .third  .cards .card{
+        max-width: calc((100% / 4) - 20px);
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .main-content .third  .cards .card{
+        max-width: calc((100% / 2) - 20px);
+        margin-bottom: 30px;
+    }
+
+    footer .first .icons{
+        flex-direction: column;
+    }
+
+    footer .first img{
+        margin-right: 5px;
+    }
+
+    footer .first,
+    footer .second,
+    footer .third{
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px){
+    
+    aside{
+        width: 50%;
+    }
+
+    aside .sidenav-top img.logo,
+    aside .sidenav-top .playlist,
+    aside .sidenav-top .menu .menu-item a,
+    aside .sidenav-bottom button p{
+        display: none;
+    }
+
+    aside .sidenav-top .menu .menu-item i{
+        margin: 0;
+        
+    }
+
+    aside .sidenav-top .logo-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    aside .sidenav-top .menu ul li{
+        justify-content: center;
+        
+    }
+
+    .sidenav-top img.logo-xs{
+        display: inline-block;
+        width: 30px;
+    }
+
+    .sidenav-bottom button,
+    .sidenav-bottom button.user {
+        justify-content: center;
+    }
+
+    .sidenav-bottom button.user i{
+        margin-right: 0;
+    }
+
+    footer .first,
+    footer .third{
+        display: none;
+    }
+}
+
+
